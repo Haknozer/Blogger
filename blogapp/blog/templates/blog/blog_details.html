@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Blog Details
+{% endblock %}
+
+{% block content %}
+    <div class="card-body text-center">
+        <h1 class="card-title">
+            {{blog.title}}
+        </h1>
+        <p class="class-text">
+            {{blog.description|safe}}
+        </p>
+    </div>
+{% endblock %}
